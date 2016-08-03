@@ -180,12 +180,17 @@ section {
     width: 55%;
     max-width: 400px;
     padding: 1.75rem 2rem 1rem 2rem;
-    margin: 5rem 0 2rem 6%;
+    margin: 8rem 0 2rem 6%;
     z-index: 1000;
+    opacity:0;
+    visibility: hidden;
+    transition: all .3s ease-in;
 }
 
-.things {
-    width: auto;
+.text-box-fade {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(-3rem);
 }
 
 
@@ -203,7 +208,9 @@ section {
     bottom: -7rem;
     left: -6rem;
     z-index: 1010;
+    transition: all .3s ease-in;
 }
+
 
 #lemon {
     height: 25rem;
@@ -212,6 +219,7 @@ section {
     right: 0;
     transform: rotate(-90deg);
     z-index: 1013;
+    transition: all .3s ease-in;
 }
 
 #orange {
@@ -220,6 +228,12 @@ section {
     bottom: 4rem;
     right: -3rem;
     z-index: 1015;
+    transition: all .3s ease-in;
+}
+
+.orangeAnimate {
+    transform: rotate(-20deg);
+    transform-origin: 10rem 8rem;
 }
 
 #orangeSlice {
@@ -228,6 +242,7 @@ section {
     bottom: -3rem;
     right: 16rem;
     z-index: 1020;
+    transition: all .3s ease-in;
 }
 
 #kumquatSlice {
@@ -236,6 +251,7 @@ section {
     bottom: 14rem;
     right: 16rem;
     z-index: 1023;
+    transition: all .3s ease-in;
 }
 
 #pinkGrapefruit {
@@ -244,6 +260,7 @@ section {
     bottom: -5rem;
     left: 17rem;
     z-index: 1030;
+    transition: all .3s ease-in;
 }
 
 #lemonSlice {
@@ -252,58 +269,92 @@ section {
     bottom: 10rem;
     right: 23rem;
     z-index: 1033;
+    transition: all .3s ease-in;
+
+}
+
+.lemonSliceAnimate {
+    transform: rotate(45deg);
 }
 
 
 /* Summer
 ================================================================= */
 #summer {
-    background: yellow;
+    background: #FFBC00;
     position: relative;
     z-index: 2000;
+    color: #FFBC00;
 }
 
-#fruit1 {
-    background: red;
-    height: 12em;
-    width: 12em;
-    border-radius: 50%;
+#strawberry {
+    height: 15rem;
     position: absolute;
-    text-align: center;
-    padding:1.5rem;
-    top: 25%;
-    right: 10%;
+    bottom: -3rem;
+    left: -6rem;
+    transform: rotate(-110deg);
+    z-index: 2050;
+    transition: all .3s ease-in;  
 }
 
-#fruit2 {
-    background: red;
-    height: 20em;
-    width: 20em;
-    border-radius: 50%;
+#nectarine {
+    height: 23rem;
     position: absolute;
-    text-align: center;
-    padding:1.5rem;
-    top: 35%;
-    right: 40%;
+    bottom: -4rem;
+    left: 4rem;
+    z-index: 2040;
+    transition: all .3s ease-in;  
 }
 
-#fruit3 {
-    background: red;
-    height: 10em;
-    width: 10em;
-    border-radius: 50%;
+#cherries {
+    height: 23rem;
     position: absolute;
-    text-align: center;
-    padding:1.5rem;
-    top: 55%;
-    right: 23%;
+    bottom: -4rem;
+    left: 25rem;
+    z-index: 2045;
+    transform: rotate(-10deg);
+    transition: all .3s ease-in;  
+}
+
+#figs {
+    height: 23rem;
+    position: absolute;
+    bottom: -4rem;
+    right: 14rem;
+    z-index: 2047;
+    transform: rotate(-10deg);
+    transition: all .3s ease-in;  
+}
+
+#peach {
+    height: 30rem;
+    position: absolute;
+    bottom: -4rem;
+    right: -5rem;
+    z-index: 2035;
+    transform: rotate(-5deg);
+    transition: all .3s ease-in;  
+}
+
+#plum {
+    height: 13rem;
+    position: absolute;
+    bottom: -2rem;
+    right: 14rem;
+    z-index: 2048;
+    transition: all .3s ease-in;  
 }
 
 /* Fall
 ================================================================= */
 #fall {
-    background: orange;
+    background: #6F005B;
+    position: relative;
+    z-index: 3000;
+    color:#6F005B;
 }
+
+
 
 
 /* Winter

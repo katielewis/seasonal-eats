@@ -1,18 +1,29 @@
+//spring section
+var springOffset = $('#spring').offset().top;
 
-// //Set up for the first screen
-// var textBoxOffset = $('.header-box').offset().top;
-// 	console.log('h1 distance ' + textBoxOffset);
+$(window).on('scroll', function () {
+	console.log('distance scrolled ' + $(window).scrollTop());
+	if ($(window).scrollTop() >= (springOffset - 20)) {
+		$('#lemonSlice').addClass('lemonSliceAnimate');
+		$('#orange').addClass('orangeAnimate');
+	} else {
+		$('#lemonSlice').removeClass('lemonSliceAnimate');
+		$('#orange').removeClass('orangeAnimate');
+	}
+});
 
-// $(window).on('scroll', function () {
-// 	console.log('distance scrolled ' + $(window).scrollTop());
-// 	if ($(window).scrollTop() >= (textBoxOffset - 30)) {
-// 		$('.header-box').addClass('intro-box'); 
-// 		$('h1').remove();
-// 		$('#intro').children().fadeIn('fast');
-// 	} else {
-// 		$('.header-box').removeClass('intro-box');
-// 		//$('.header-box').append('<h1>Seasonal Eats</h1>');
-// 		//only once!!
-// 	}
+$(window).on('scroll', function () {
+	if ($(window).scrollTop() >= (springOffset / 2)) {
+		$('#spring-text-box').addClass('text-box-fade');
+	}
+});
 
-// });
+
+//summer section
+var summerOffset = $('#summer').offset().top;
+
+$(window).on('scroll', function () {
+	if ($(window).scrollTop() >= (summerOffset / 1.5)) {
+		$('#summer-text-box').addClass('text-box-fade');
+	}
+});
