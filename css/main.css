@@ -354,13 +354,85 @@ section {
     color:#6F005B;
 }
 
+#squash {
+    height: 25rem;
+    position: absolute;
+    bottom: -4rem;
+    left: -4rem;
+    z-index: 3020;
+    transform: rotate(50deg);
+    transition: all .3s ease-in;  
+}
 
+#squash4 {
+    height: 18rem;
+    position: absolute;
+    bottom: -4rem;
+    left: 12rem;
+    z-index: 3030;
+    transform: rotate(-30deg);
+    transition: all .3s ease-in;  
+}
+
+#eggplant {
+    height: 30rem;
+    position: absolute;
+    bottom: -4rem;
+    right: 28rem;
+    z-index: 3025;
+    transform: rotate(33deg);
+    transition: all .3s ease-in;  
+}
+
+#squash2 {
+    height: 14rem;
+    position: absolute;
+    bottom: 6rem;
+    right: 3rem;
+    z-index: 3023;
+    transform: rotate(-70deg);
+    transition: all .3s ease-in;  
+}
+
+#corn {
+    height: 40rem;
+    position: absolute;
+    bottom: -3rem;
+    right: 3rem;
+    z-index: 3035;
+    transform: rotate(33deg);
+    transition: all .3s ease-in;  
+}
+
+#squash3 {
+    height: 40rem;
+    position: absolute;
+    bottom: -3rem;
+    right: -8rem;
+    z-index: 3037;
+    transform: rotate(7deg);
+    transition: all .3s ease-in;  
+}
 
 
 /* Winter
 ================================================================= */
 #winter {
-    background: blue;
+    background: #003C5B;
+    position: relative;
+    z-index: 4000;
+    color: #003C5B;
+
+}
+
+#kale {
+    height: 40rem;
+    position: absolute;
+    bottom: -3rem;
+    right: -4rem;
+    z-index: 4010;
+    transform: rotate(20deg);
+    transition: all .3s ease-in;  
 }
 
 
@@ -370,6 +442,8 @@ footer {
     background-color:black;
     clear: both;
     padding: 2rem 3.75rem;
+    z-index: 5000;
+    position: relative;
 }
 
 footer p {
