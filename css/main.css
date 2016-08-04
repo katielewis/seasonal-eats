@@ -112,6 +112,11 @@ text font: 'Poppins*/
     font-weight: 400;
 }
 
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 html {
     font-size: 18px;
 }
@@ -237,6 +242,8 @@ section {
 }
 
 #orangeSlice {
+/*    width: 30%;
+    max-width: 358px;*/
     height: 20rem;
     position: absolute;
     bottom: -3rem;
@@ -281,10 +288,10 @@ section {
 /* Summer
 ================================================================= */
 #summer {
-    background: #FFBC00;
+    background: #FFA600;
     position: relative;
     z-index: 2000;
-    color: #FFBC00;
+    color: #FFA600;
 }
 
 #strawberry {
@@ -297,13 +304,57 @@ section {
     transition: all .3s ease-in;  
 }
 
+.strawberryBounce {
+    -webkit-animation: strawberryBounce .4s ease-in; /* Safari 4+ */
+    -moz-animation:    strawberryBounce .4s ease-in; /* Fx 5+ */
+    -o-animation:      strawberryBounce .4s ease-in; /* Opera 12+ */
+    animation:         strawberryBounce .4s ease-in; /* IE 10+, Fx 29+ */
+}
+
+@keyframes strawberryBounce {
+    0%   {transform: translateY(0rem) rotate(-110deg);}
+    25%  {transform: translateY(.5rem) rotate(-110deg);}
+    50%  {transform: translateY(2rem) rotate(-110deg);}
+    75%  {transform: translateY(.75rem) rotate(-110deg);}
+    100% {transform: translateY(0rem) rotate(-110deg);}
+}
+
 #nectarine {
     height: 23rem;
     position: absolute;
     bottom: -4rem;
     left: 4rem;
-    z-index: 2040;
-    transition: all .3s ease-in;  
+    z-index: 2040;  
+}
+
+.fruitBounce {
+    -webkit-animation: fruitBounce .4s ease-in; /* Safari 4+ */
+    -moz-animation:    fruitBounce .4s ease-in; /* Fx 5+ */
+    -o-animation:      fruitBounce .4s ease-in; /* Opera 12+ */
+    animation:         fruitBounce .4s ease-in; /* IE 10+, Fx 29+ */
+}
+
+@keyframes fruitBounce {
+    0%   {transform: translateY(0rem);}
+    25%  {transform: translateY(.75rem);}
+    50%  {transform: translateY(1.5rem);}
+    75%  {transform: translateY(.75rem);}
+    100% {transform: translateY(0rem);}
+}
+
+.secondBounce {
+    -webkit-animation: secondBounce .4s ease-in; /* Safari 4+ */
+    -moz-animation:    secondBounce .4s ease-in; /* Fx 5+ */
+    -o-animation:      secondBounce .4s ease-in; /* Opera 12+ */
+    animation:         secondBounce .4s ease-in; /* IE 10+, Fx 29+ */
+}
+
+@keyframes secondBounce {
+    0%   {transform: translateY(0rem) rotate(-10deg);}
+    25%  {transform: translateY(.2rem) rotate(-10deg);}
+    50%  {transform: translateY(2rem) rotate(-10deg);}
+    75%  {transform: translateY(.5rem) rotate(-10deg);}
+    100% {transform: translateY(0rem) rotate(-10deg);}
 }
 
 #cherries {
@@ -312,8 +363,7 @@ section {
     bottom: -4rem;
     left: 25rem;
     z-index: 2045;
-    transform: rotate(-10deg);
-    transition: all .3s ease-in;  
+    transform: rotate(-10deg); 
 }
 
 #figs {
@@ -323,7 +373,6 @@ section {
     right: 14rem;
     z-index: 2047;
     transform: rotate(-10deg);
-    transition: all .3s ease-in;  
 }
 
 #peach {
@@ -332,8 +381,7 @@ section {
     bottom: -4rem;
     right: -5rem;
     z-index: 2035;
-    transform: rotate(-5deg);
-    transition: all .3s ease-in;  
+    transform: rotate(-5deg); 
 }
 
 #plum {
@@ -341,8 +389,7 @@ section {
     position: absolute;
     bottom: -2rem;
     right: 14rem;
-    z-index: 2048;
-    transition: all .3s ease-in;  
+    z-index: 2048;  
 }
 
 /* Fall
@@ -414,6 +461,11 @@ section {
     transition: all .3s ease-in;  
 }
 
+.gordsMove {
+    /*transform: rotate(-15deg);*/
+    transform: translateY(2rem);
+}    
+
 
 /* Winter
 ================================================================= */
@@ -433,6 +485,40 @@ section {
     z-index: 4010;
     transform: rotate(20deg);
     transition: all .3s ease-in;  
+}
+
+#kale2 {
+    height: 40rem;
+    position: absolute;
+    bottom: -4rem;
+    right: 17rem;
+    z-index: 4013;
+    transform: rotate(20deg);
+    transition: all .3s ease-in;  
+}
+
+#broccoli {
+    height: 20rem;
+    position: absolute;
+    bottom: 1rem;
+    left: 10rem;
+    z-index: 4020;
+    transform: rotate(-30deg);
+    transition: all .3s ease-in;  
+}
+
+#brussels {
+    height: 20rem;
+    position: absolute;
+    bottom: -5rem;
+    right: 7rem;
+    z-index: 4030;
+    transform: rotate(0deg);
+    transition: all .3s ease-in;  
+}
+
+.veggieFan {
+    transform: rotate(-30deg);
 }
 
 
@@ -459,6 +545,12 @@ footer p {
 .right {
     float: right;
 }
+
+
+/* Media Queries
+================================================================= */
+
+
 
 /* ==========================================================================
    Helper classes
