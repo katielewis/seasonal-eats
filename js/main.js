@@ -51,7 +51,7 @@ $(window).on('scroll', function () {
 
 $(window).on('scroll', function () {
 	if ($(window).scrollTop() >= (fallOffset - 30)) {
-		$('#squash').addClass('gordsMove');
+		$('.squash').addClass('gordsMove');
 	}
 });
 
