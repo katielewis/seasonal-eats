@@ -407,9 +407,13 @@ section {
     bottom: -4rem;
     left: -4rem;
     z-index: 3020;
-    transform: rotate(50deg);
+    transform: rotate(40deg);
     transition: all .3s ease-in;  
 }
+
+.squashMove {
+    transform: rotate(50deg);
+}    
 
 .squash4 {
     height: 18rem;
@@ -417,9 +421,13 @@ section {
     bottom: -4rem;
     left: 12rem;
     z-index: 3030;
-    transform: rotate(-30deg);
+    transform: rotate(-20deg);
     transition: all .3s ease-in;  
 }
+
+.squash4Move {
+    transform: rotate(-30deg);
+}  
 
 .eggplant {
     height: 30rem;
@@ -427,9 +435,13 @@ section {
     bottom: -4rem;
     right: 28rem;
     z-index: 3025;
-    transform: rotate(33deg);
+    transform: rotate(20deg);
     transition: all .3s ease-in;  
 }
+
+.eggplantMove {
+    transform: rotate(33deg);
+} 
 
 .squash2 {
     height: 14rem;
@@ -437,9 +449,13 @@ section {
     bottom: 6rem;
     right: 3rem;
     z-index: 3023;
-    transform: rotate(-70deg);
+    transform: rotate(-55deg);
     transition: all .3s ease-in;  
 }
+
+.squash2Move {
+    transform: rotate(-70deg);
+} 
 
 .corn {
     height: 40rem;
@@ -447,9 +463,13 @@ section {
     bottom: -3rem;
     right: 3rem;
     z-index: 3035;
-    transform: rotate(33deg);
+    transform: rotate(20deg);
     transition: all .3s ease-in;  
 }
+
+.cornMove {
+    transform: rotate(33deg);
+} 
 
 .squash3 {
     height: 40rem;
@@ -457,13 +477,13 @@ section {
     bottom: -3rem;
     right: -8rem;
     z-index: 3037;
-    transform: rotate(7deg);
+    transform: rotate(15deg);
     transition: all .3s ease-in;  
-}
+}  
 
-.gordsMove {
-    transform: rotate(-15deg);
-}    
+.squash3Move {
+    transform: rotate(7deg);
+} 
 
 
 /* Winter
@@ -476,7 +496,7 @@ section {
 
 }
 
-#kale {
+.kale {
     height: 40rem;
     position: absolute;
     bottom: -3rem;
@@ -486,17 +506,17 @@ section {
     transition: all .3s ease-in;  
 }
 
-#kale2 {
+.kale2 {
     height: 40rem;
     position: absolute;
     bottom: -4rem;
-    right: 17rem;
+    right: 10rem;
     z-index: 4013;
     transform: rotate(20deg);
     transition: all .3s ease-in;  
 }
 
-#broccoli {
+.broccoli {
     height: 20rem;
     position: absolute;
     bottom: 1rem;
@@ -506,7 +526,7 @@ section {
     transition: all .3s ease-in;  
 }
 
-#brussels {
+.brussels {
     height: 20rem;
     position: absolute;
     bottom: -5rem;
@@ -524,17 +544,29 @@ section {
 /* Footer
 ================================================================= */
 footer {
-    background-color:black;
+    background-color: #122A41;
     clear: both;
-    padding: 2rem 3.75rem;
+    padding: 1.5rem 3.75rem;
     z-index: 5000;
     position: relative;
+    color: #F3F1DE;
+    line-height: 0;
+}
+
+footer section {
+    height: auto;
+    border-bottom: 1px solid #F3F1DE;
 }
 
 footer p {
-    color: white;
-    margin: 0;
-    line-height: 0;
+    display: inline-block;
+}
+
+a {
+    color: #00DF60;
+    padding: 2rem 0 1rem 1rem;
+    text-decoration: none;
+    display: inline-block;
 }
 
 .left {

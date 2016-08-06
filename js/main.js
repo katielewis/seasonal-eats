@@ -50,8 +50,14 @@ $(window).on('scroll', function () {
 });
 
 $(window).on('scroll', function () {
-	if ($(window).scrollTop() >= (fallOffset - 30)) {
-		$('.squash').addClass('gordsMove');
+	if ($(window).scrollTop() >= (fallOffset - 40)) {
+		$('.squash').addClass('squashMove');
+		$('.squash4').addClass('squash4Move');
+		$('.eggplant').addClass('eggplantMove');
+		$('.squash2').addClass('squash2Move');
+		$('.corn').addClass('cornMove');
+		$('.squash3').addClass('squash3Move');
+
 	}
 });
 
@@ -68,6 +74,6 @@ $(window).on('scroll', function () {
 
 $(window).on('scroll', function () {
 	if ($(window).scrollTop() >= (winterOffset - 20)) {
-		$('#kale').addClass('veggieFan');
+		$('.kale').addClass('veggieFan');
 	} 
 });
