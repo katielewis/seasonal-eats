@@ -500,10 +500,14 @@ section {
     height: 40rem;
     position: absolute;
     bottom: -3rem;
-    right: -4rem;
+    right: -6rem;
     z-index: 4010;
     transform: rotate(20deg);
     transition: all .3s ease-in;  
+}
+
+.kalePile {
+    transform: rotate(-30deg);
 }
 
 .kale2 {
@@ -512,8 +516,12 @@ section {
     bottom: -4rem;
     right: 10rem;
     z-index: 4013;
-    transform: rotate(20deg);
+    transform: rotate(-15deg);
     transition: all .3s ease-in;  
+}
+
+.kale2Pile {
+    transform: rotate(20deg);
 }
 
 .broccoli {
@@ -522,8 +530,12 @@ section {
     bottom: 1rem;
     left: 10rem;
     z-index: 4020;
+    transform: rotate(-50deg);
+    transition: all .3s ease-in; 
+}
+
+.broccoliPile {
     transform: rotate(-30deg);
-    transition: all .3s ease-in;  
 }
 
 .brussels {
@@ -534,10 +546,6 @@ section {
     z-index: 4030;
     transform: rotate(0deg);
     transition: all .3s ease-in;  
-}
-
-.veggieFan {
-    transform: rotate(-30deg);
 }
 
 

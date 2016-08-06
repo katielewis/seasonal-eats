@@ -5,8 +5,8 @@ var springOffset = $('#spring').offset().top;
 $(window).on('scroll', function () {
 	console.log('distance scrolled ' + $(window).scrollTop());
 	if ($(window).scrollTop() >= (springOffset - 20)) {
-		$('#lemonSlice').addClass('lemonSliceAnimate');
-		$('#orange').addClass('orangeAnimate');
+		$('#lemonSlice ,#kumquatSlice').addClass('lemonSliceAnimate');
+		$('#orange ,#orangeSlice').addClass('orangeAnimate');
 	} 
 	// none of the other animations so on scrolling up, so hiding
 	// else {
@@ -74,6 +74,8 @@ $(window).on('scroll', function () {
 
 $(window).on('scroll', function () {
 	if ($(window).scrollTop() >= (winterOffset - 20)) {
-		$('.kale').addClass('veggieFan');
+		$('.kale').addClass('kalePile');
+		$('.kale2').addClass('kale2Pile');
+		$('.broccoli').addClass('broccoliPile');
 	} 
 });
