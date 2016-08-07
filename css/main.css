@@ -811,6 +811,7 @@ a:hover {
         transform: rotate(35deg);
         right: 1rem;
     }
+}
 
 @media only screen and (max-width: 575px) {
     h1 {
@@ -843,20 +844,65 @@ a:hover {
 
 @media only screen and (max-width: 480px) {
     h1 {
-        padding: 18% ;
+        padding-top: 18% ;
+        padding-bottom: 2%;
     }
 }
 
-@media only screen and (max-width: 400px) { 
+@media only screen and (max-width: 420px) { 
     html {
         font-size: 12px;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    #kumquatSlice {
+        bottom: 3rem;
+    }
+
+    #pinkGrapefruit {
+        left: 12rem;
+    }
+
+    #nectarine {
+        opacity: 0;
+    }
+
+    #figs {
+        right: 12rem;
+    }
+
+    #cherries {
+        left: 19rem;
+        bottom: -8rem;
     }
 
     .broccoli {
         left: -10rem;
     }
 
+    .squash4 {
+        z-index: 3090;
+    }
+
+    .squash3 {
+        right: -11rem;
+    }
+
 }
+
+@media only screen and (max-width: 320px) { 
+    html {
+        font-size: 10px;
+    }
+    
+    header p,
+    section p {
+        font-size: 1.3rem;
+    }
+
 
 /* ==========================================================================
    Print styles.
