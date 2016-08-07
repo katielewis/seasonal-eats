@@ -1,10 +1,21 @@
+//intro section
+var introOffset = $('header').offset().top;
+
+$(window).on('scroll', function () {
+	if ($(window).scrollTop() >= (introOffset -30)) {
+		$('.basil').addClass('basilSpin');
+		$('.apple').addClass('appleSpin');
+		$('.peas').addClass('peasSpin');
+	}
+});
+
 
 //spring section
 var springOffset = $('#spring').offset().top;
 
 $(window).on('scroll', function () {
 	console.log('distance scrolled ' + $(window).scrollTop());
-	if ($(window).scrollTop() >= (springOffset - 20)) {
+	if ($(window).scrollTop() >= (springOffset - 30)) {
 		$('#lemonSlice ,#kumquatSlice').addClass('lemonSliceAnimate');
 		$('#orange ,#orangeSlice').addClass('orangeAnimate');
 	} 
@@ -32,7 +43,7 @@ $(window).on('scroll', function () {
 });
 
 $(window).on('scroll', function () {
-	if ($(window).scrollTop() >= (summerOffset - 40)) {
+	if ($(window).scrollTop() >= (summerOffset - 55)) {
 		$('#nectarine ,#plum ,#peach').addClass('fruitBounce');
 		$('#strawberry').addClass('strawberryBounce');
 		$('#cherries ,#figs').addClass('secondBounce');
@@ -50,7 +61,7 @@ $(window).on('scroll', function () {
 });
 
 $(window).on('scroll', function () {
-	if ($(window).scrollTop() >= (fallOffset - 40)) {
+	if ($(window).scrollTop() >= (fallOffset - 45)) {
 		$('.squash').addClass('squashMove');
 		$('.squash4').addClass('squash4Move');
 		$('.eggplant').addClass('eggplantMove');
@@ -73,7 +84,7 @@ $(window).on('scroll', function () {
 });
 
 $(window).on('scroll', function () {
-	if ($(window).scrollTop() >= (winterOffset - 20)) {
+	if ($(window).scrollTop() >= (winterOffset - 40)) {
 		$('.kale').addClass('kalePile');
 		$('.kale2').addClass('kale2Pile');
 		$('.broccoli').addClass('broccoliPile');

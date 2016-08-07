@@ -181,6 +181,20 @@ header {
     transition: all .3s ease-in;
 }
 
+.basilSpin {
+    transform: rotate(0deg);
+}
+
+/*.basil {
+    height: 27rem;
+    position: absolute;
+    bottom: -10rem;
+    left: -9rem;
+    z-index: 150;
+    transform: rotate(-150deg);
+    transition: all .3s ease-in;
+}*/
+
 .asparagus {
     height: 50rem;
     position: absolute;
@@ -197,18 +211,25 @@ header {
     bottom: -3rem;
     right: -1rem;
     z-index: 170;
-    transform: rotate(15deg);
+    transform: rotate(0deg);
     transition: all .3s ease-in;
+}
+
+.appleSpin {
+    transform: rotate(15deg);
 }
 
 .peas {
     height: 20rem;
     position: absolute;
-    bottom: -8rem;
+    bottom: -10rem;
     right: 16rem;
     z-index: 180;
-    transform: rotate(0deg);
     transition: all .3s ease-in;
+}
+
+.peasSpin {
+    transform: translateY(-2rem);
 }
 
 
