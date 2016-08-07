@@ -128,22 +128,27 @@ h2 {
 }
 
 h1 {
+    font-size: 90px;
     font-size: 5rem;
     color: #F3F1DE;
-    padding: 9% 0 0 6% ;
+    padding: 9% 0 1% 6% ;
     margin: 0;
+    line-height: 63px;
     line-height: 3.5rem;
 
 }
 
 h2 {
+    font-size: 36px;
     font-size: 2rem;
     margin: 0;
 }
 
 header p,
 section p {
+    line-height: 27px;
     line-height: 1.5rem;
+    margin-top: 9px;
     margin-top: .5rem;
 }
 
@@ -159,24 +164,32 @@ section {
     display: inline-block;
     width: 55%;
     max-width: 400px;
+    padding:28px 32px 16px 32px;
     padding: 1.75rem 2rem 1rem 2rem;
+    margin:128px 0 32px 6%;
     margin: 8rem 0 2rem 6%;
     z-index: 1000;
     opacity:0;
+    filter:alpha(opacity=0);
     visibility: hidden;
-    transition: all .3s ease-in;
+    -webkit-transition: all .3s ease-in;
+            transition: all .3s ease-in;
 }
 
 .text-box-fade {
     opacity: 1;
+    filter:alpha(opacity=100);
     visibility: visible;
-    transform: translateY(-3rem);
+    -webkit-transform: translateY(-3rem);
+        -ms-transform: translateY(-3rem);
+            transform: translateY(-3rem);
 }
 
 
 img {
     position: absolute;
-    transition: all .3s ease-in;
+    -webkit-transition: all .3s ease-in;
+            transition: all .3s ease-in;
 }
 
 /* Header
@@ -198,22 +211,31 @@ header {
     background-color: #F3F1DE;
     display: inline-block;
     width: 63%;
+    padding: 28px 32px 16px 32px;
     padding: 1.75rem 2rem 1rem 2rem;
+    margin: 0 0 32px 6%;
     margin: 0 0 2rem 6%;
     z-index: 100;
     color: #54D24B;
 }
 
 .basil {
+    height: 400px;
     height: 25rem;
+    top: -80px;
     top: -5rem;
+    right: -128px;
     right: -8rem;
     z-index: 150;
-    transform: rotate(60deg);
+    -webkit-transform: rotate(60deg);
+        -ms-transform: rotate(60deg);
+            transform: rotate(60deg);
 }
 
 .basilSpin {
-    transform: rotate(40deg);
+    -webkit-transform: rotate(40deg);
+        -ms-transform: rotate(40deg);
+            transform: rotate(40deg);
 }
 
 /*.basil {
@@ -227,34 +249,51 @@ header {
 }*/
 
 .asparagus {
+    height: 800px;
     height: 50rem;
+    bottom: -160px;
     bottom: -10rem;
+    right: 48px;
     right: 3rem;
     z-index: 160;
-    transform: rotate(25deg);
+    -webkit-transform: rotate(25deg);
+        -ms-transform: rotate(25deg);
+            transform: rotate(25deg);
 }
 
 .apple {
+    height: 320px;
     height: 20rem;
+    bottom: -48px;
     bottom: -3rem;
+    right: -16px;
     right: -1rem;
     z-index: 170;
-    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+            transform: rotate(0deg);
 }
 
 .appleSpin {
-    transform: rotate(15deg);
+    -webkit-transform: rotate(15deg);
+        -ms-transform: rotate(15deg);
+            transform: rotate(15deg);
 }
 
 .peas {
+    height: 320px;
     height: 20rem;
+    bottom: -160px;
     bottom: -10rem;
+    right: 256px;
     right: 16rem;
     z-index: 180;
 }
 
 .peasSpin {
-    transform: translateY(-2rem);
+    -webkit-transform: translateY(-2rem);
+        -ms-transform: translateY(-2rem);
+            transform: translateY(-2rem);
 }
 
 
@@ -268,66 +307,92 @@ header {
 }
 
 #kumquats {
+    height: 400px;
     height: 25rem;
+    bottom: -112px;
     bottom: -7rem;
+    left: -96px;
     left: -6rem;
     z-index: 1010;
 }
 
 
 #lemon {
+    height: 400px;
     height: 25rem;
+    bottom: -160px;
     bottom: -10rem;
     right: 0;
-    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+            transform: rotate(-90deg);
     z-index: 1013;
 }
 
 #orange {
+    height: 304px;
     height: 19rem;
+    bottom: 64px;
     bottom: 4rem;
+    right: -48px;
     right: -3rem;
     z-index: 1015;
 }
 
 .orangeAnimate {
-    transform: rotate(-20deg);
-    transform-origin: 10rem 8rem;
+    -webkit-transform: rotate(-20deg);
+        -ms-transform: rotate(-20deg);
+            transform: rotate(-20deg);
+    -webkit-transform-origin: 10rem 8rem;
+        -ms-transform-origin: 10rem 8rem;
+            transform-origin: 10rem 8rem;
 }
 
 #orangeSlice {
-/*    width: 30%;
-    max-width: 358px;*/
+    height: 320px;
     height: 20rem;
+    bottom: -48px;
     bottom: -3rem;
+    right: 256px;
     right: 16rem;
     z-index: 1020;
 }
 
 #kumquatSlice {
+    height: 160px;
     height: 10rem;
+    bottom: 224px;
     bottom: 14rem;
+    right: 256px;
     right: 16rem;
     z-index: 1023;
 }
 
 #pinkGrapefruit {
+    height: 384px;
     height: 24rem;
+    bottom: -80px;
     bottom: -5rem;
+    left: 272px;
     left: 17rem;
     z-index: 1030;
 }
 
 #lemonSlice {
+    height: 240px;
     height: 15rem;
+    bottom: 160px;
     bottom: 10rem;
+    right: 368px;
     right: 23rem;
     z-index: 1033;
 
 }
 
 .lemonSliceAnimate {
-    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
 }
 
 
@@ -341,94 +406,138 @@ header {
 }
 
 #strawberry {
+    height: 240px;
     height: 15rem;
+    bottom: -48px;
     bottom: -3rem;
+    left: -96px;
     left: -6rem;
-    transform: rotate(-110deg);
+    -webkit-transform: rotate(-110deg);
+        -ms-transform: rotate(-110deg);
+            transform: rotate(-110deg);
     z-index: 2050; 
 }
 
 .strawberryBounce {
-    -webkit-animation: strawberryBounce .4s ease-in; /* Safari 4+ */
-    -moz-animation:    strawberryBounce .4s ease-in; /* Fx 5+ */
-    -o-animation:      strawberryBounce .4s ease-in; /* Opera 12+ */
-    animation:         strawberryBounce .4s ease-in; /* IE 10+, Fx 29+ */
+-webkit-animation: strawberryBounce .4s ease-in; /* Safari 4+ */ /* Fx 5+ */ /* Opera 12+ */
+animation:         strawberryBounce .4s ease-in; /* IE 10+, Fx 29+ */
+}
+
+@-webkit-keyframes strawberryBounce {
+    0%   {-webkit-transform: translateY(0rem) rotate(-110deg);transform: translateY(0rem) rotate(-110deg);}
+    25%  {-webkit-transform: translateY(.5rem) rotate(-110deg);transform: translateY(.5rem) rotate(-110deg);}
+    50%  {-webkit-transform: translateY(2rem) rotate(-110deg);transform: translateY(2rem) rotate(-110deg);}
+    75%  {-webkit-transform: translateY(.75rem) rotate(-110deg);transform: translateY(.75rem) rotate(-110deg);}
+    100% {-webkit-transform: translateY(0rem) rotate(-110deg);transform: translateY(0rem) rotate(-110deg);}
 }
 
 @keyframes strawberryBounce {
-    0%   {transform: translateY(0rem) rotate(-110deg);}
-    25%  {transform: translateY(.5rem) rotate(-110deg);}
-    50%  {transform: translateY(2rem) rotate(-110deg);}
-    75%  {transform: translateY(.75rem) rotate(-110deg);}
-    100% {transform: translateY(0rem) rotate(-110deg);}
+    0%   {-webkit-transform: translateY(0rem) rotate(-110deg);transform: translateY(0rem) rotate(-110deg);}
+    25%  {-webkit-transform: translateY(.5rem) rotate(-110deg);transform: translateY(.5rem) rotate(-110deg);}
+    50%  {-webkit-transform: translateY(2rem) rotate(-110deg);transform: translateY(2rem) rotate(-110deg);}
+    75%  {-webkit-transform: translateY(.75rem) rotate(-110deg);transform: translateY(.75rem) rotate(-110deg);}
+    100% {-webkit-transform: translateY(0rem) rotate(-110deg);transform: translateY(0rem) rotate(-110deg);}
 }
 
 #nectarine {
+    height: 368px;
     height: 23rem;
+    bottom: -64px;
     bottom: -4rem;
+    left: 64px;
     left: 4rem;
     z-index: 2040;  
 }
 
 .fruitBounce {
-    -webkit-animation: fruitBounce .4s ease-in; /* Safari 4+ */
-    -moz-animation:    fruitBounce .4s ease-in; /* Fx 5+ */
-    -o-animation:      fruitBounce .4s ease-in; /* Opera 12+ */
+    -webkit-animation: fruitBounce .4s ease-in; /* Safari 4+ */ /* Fx 5+ */ /* Opera 12+ */
     animation:         fruitBounce .4s ease-in; /* IE 10+, Fx 29+ */
 }
 
+@-webkit-keyframes fruitBounce {
+    0%   {-webkit-transform: translateY(0rem);transform: translateY(0rem);}
+    25%  {-webkit-transform: translateY(.75rem);transform: translateY(.75rem);}
+    50%  {-webkit-transform: translateY(1.5rem);transform: translateY(1.5rem);}
+    75%  {-webkit-transform: translateY(.75rem);transform: translateY(.75rem);}
+    100% {-webkit-transform: translateY(0rem);transform: translateY(0rem);}
+}
+
 @keyframes fruitBounce {
-    0%   {transform: translateY(0rem);}
-    25%  {transform: translateY(.75rem);}
-    50%  {transform: translateY(1.5rem);}
-    75%  {transform: translateY(.75rem);}
-    100% {transform: translateY(0rem);}
+    0%   {-webkit-transform: translateY(0rem);transform: translateY(0rem);}
+    25%  {-webkit-transform: translateY(.75rem);transform: translateY(.75rem);}
+    50%  {-webkit-transform: translateY(1.5rem);transform: translateY(1.5rem);}
+    75%  {-webkit-transform: translateY(.75rem);transform: translateY(.75rem);}
+    100% {-webkit-transform: translateY(0rem);transform: translateY(0rem);}
 }
 
 .secondBounce {
-    -webkit-animation: secondBounce .4s ease-in; /* Safari 4+ */
-    -moz-animation:    secondBounce .4s ease-in; /* Fx 5+ */
-    -o-animation:      secondBounce .4s ease-in; /* Opera 12+ */
+    -webkit-animation: secondBounce .4s ease-in; /* Safari 4+ */ /* Fx 5+ */ /* Opera 12+ */
     animation:         secondBounce .4s ease-in; /* IE 10+, Fx 29+ */
 }
 
+@-webkit-keyframes secondBounce {
+    0%   {-webkit-transform: translateY(0rem) rotate(-10deg);transform: translateY(0rem) rotate(-10deg);}
+    25%  {-webkit-transform: translateY(.2rem) rotate(-10deg);transform: translateY(.2rem) rotate(-10deg);}
+    50%  {-webkit-transform: translateY(2rem) rotate(-10deg);transform: translateY(2rem) rotate(-10deg);}
+    75%  {-webkit-transform: translateY(.5rem) rotate(-10deg);transform: translateY(.5rem) rotate(-10deg);}
+    100% {-webkit-transform: translateY(0rem) rotate(-10deg);transform: translateY(0rem) rotate(-10deg);}
+}
+
 @keyframes secondBounce {
-    0%   {transform: translateY(0rem) rotate(-10deg);}
-    25%  {transform: translateY(.2rem) rotate(-10deg);}
-    50%  {transform: translateY(2rem) rotate(-10deg);}
-    75%  {transform: translateY(.5rem) rotate(-10deg);}
-    100% {transform: translateY(0rem) rotate(-10deg);}
+    0%   {-webkit-transform: translateY(0rem) rotate(-10deg);transform: translateY(0rem) rotate(-10deg);}
+    25%  {-webkit-transform: translateY(.2rem) rotate(-10deg);transform: translateY(.2rem) rotate(-10deg);}
+    50%  {-webkit-transform: translateY(2rem) rotate(-10deg);transform: translateY(2rem) rotate(-10deg);}
+    75%  {-webkit-transform: translateY(.5rem) rotate(-10deg);transform: translateY(.5rem) rotate(-10deg);}
+    100% {-webkit-transform: translateY(0rem) rotate(-10deg);transform: translateY(0rem) rotate(-10deg);}
 }
 
 #cherries {
+    height: 368px;
     height: 23rem;
+    bottom: -64px;
     bottom: -4rem;
+    left: 400px;
     left: 25rem;
     z-index: 2045;
-    transform: rotate(-10deg); 
+    -webkit-transform: rotate(-10deg);
+        -ms-transform: rotate(-10deg);
+            transform: rotate(-10deg); 
 }
 
 #figs {
+    height: 368px;
     height: 23rem;
+    bottom: -64px;
     bottom: -4rem;
+    right: 224px;
     right: 14rem;
     z-index: 2047;
-    transform: rotate(-10deg);
+    -webkit-transform: rotate(-10deg);
+        -ms-transform: rotate(-10deg);
+            transform: rotate(-10deg);
 }
 
 #peach {
+    height: 480px;
     height: 30rem;
+    bottom: -64px;
     bottom: -4rem;
+    right: -80px;
     right: -5rem;
     z-index: 2035;
-    transform: rotate(-5deg); 
+    -webkit-transform: rotate(-5deg);
+        -ms-transform: rotate(-5deg);
+            transform: rotate(-5deg); 
 }
 
 #plum {
+    height: 208px;
     height: 13rem;
+    bottom: -32px;
     bottom: -2rem;
+    right: 224px;
     right: 14rem;
-    z-index: 2048;  
+    z-index: 2048; 
 }
 
 /* Fall
@@ -441,75 +550,117 @@ header {
 }
 
 .squash {
+    height: 400px;
     height: 25rem;
+    bottom: -64px;
     bottom: -4rem;
+    left: -64px;
     left: -4rem;
     z-index: 3020;
-    transform: rotate(40deg);
+    -webkit-transform: rotate(40deg);
+        -ms-transform: rotate(40deg);
+            transform: rotate(40deg);
 }
 
 .squashMove {
-    transform: rotate(50deg);
+    -webkit-transform: rotate(50deg);
+        -ms-transform: rotate(50deg);
+            transform: rotate(50deg);
 }    
 
 .squash4 {
+    height: 288px;
     height: 18rem;
+    bottom: -64px;
     bottom: -4rem;
+    left: 192px;
     left: 12rem;
     z-index: 3030;
-    transform: rotate(-20deg); 
+    -webkit-transform: rotate(-20deg);
+        -ms-transform: rotate(-20deg);
+            transform: rotate(-20deg);
 }
 
 .squash4Move {
-    transform: rotate(-30deg);
+    -webkit-transform: rotate(-30deg);
+        -ms-transform: rotate(-30deg);
+            transform: rotate(-30deg);
 }  
 
 .eggplant {
+    height: 480px;
     height: 30rem;
+    bottom: -64px;
     bottom: -4rem;
+    right: 448px;
     right: 28rem;
     z-index: 3025;
-    transform: rotate(20deg);
+    -webkit-transform: rotate(20deg);
+        -ms-transform: rotate(20deg);
+            transform: rotate(20deg);
 }
 
 .eggplantMove {
-    transform: rotate(33deg);
+    -webkit-transform: rotate(33deg);
+        -ms-transform: rotate(33deg);
+            transform: rotate(33deg);
 } 
 
 .squash2 {
+    height: 224px;
     height: 14rem;
+    bottom: 96px;
     bottom: 6rem;
+    right: 48px;
     right: 3rem;
     z-index: 3023;
-    transform: rotate(-55deg);
+    -webkit-transform: rotate(-55deg);
+        -ms-transform: rotate(-55deg);
+            transform: rotate(-55deg);
 }
 
 .squash2Move {
-    transform: rotate(-70deg);
+    -webkit-transform: rotate(-70deg);
+        -ms-transform: rotate(-70deg);
+            transform: rotate(-70deg);
 } 
 
 .corn {
+    height: 640px;
     height: 40rem;
+    bottom: -48px;
     bottom: -3rem;
+    right: 48px;
     right: 3rem;
     z-index: 3035;
-    transform: rotate(20deg);
+    -webkit-transform: rotate(20deg);
+        -ms-transform: rotate(20deg);
+            transform: rotate(20deg);
 }
 
 .cornMove {
-    transform: rotate(33deg);
+    -webkit-transform: rotate(33deg);
+        -ms-transform: rotate(33deg);
+            transform: rotate(33deg);
 } 
 
 .squash3 {
+    height: 640px;
     height: 40rem;
+    bottom: -48px;
     bottom: -3rem;
+    right: -128px;
     right: -8rem;
     z-index: 3037;
-    transform: rotate(15deg); 
+    -webkit-transform: rotate(15deg);
+        -ms-transform: rotate(15deg);
+            transform: rotate(15deg); 
 }  
 
 .squash3Move {
-    transform: rotate(7deg);
+    -webkit-transform: rotate(7deg);
+        -ms-transform: rotate(7deg);
+            transform: rotate(7deg);
 } 
 
 
@@ -524,47 +675,73 @@ header {
 }
 
 .kale {
+    height: 640px;
     height: 40rem;
+    bottom: -48px;
     bottom: -3rem;
+    right: -96px;
     right: -6rem;
     z-index: 4010;
-    transform: rotate(20deg); 
+    -webkit-transform: rotate(20deg);
+        -ms-transform: rotate(20deg);
+            transform: rotate(20deg);
 }
 
 .kalePile {
-    transform: rotate(-30deg);
+    -webkit-transform: rotate(-30deg);
+        -ms-transform: rotate(-30deg);
+            transform: rotate(-30deg);
 }
 
 .kale2 {
+    height: 640px;
     height: 40rem;
+    bottom: -64px;
     bottom: -4rem;
+    right: 160px;
     right: 10rem;
     z-index: 4013;
-    transform: rotate(-15deg);
+    -webkit-transform: rotate(-15deg);
+        -ms-transform: rotate(-15deg);
+            transform: rotate(-15deg);
 }
 
 .kale2Pile {
-    transform: rotate(20deg);
+    -webkit-transform: rotate(20deg);
+        -ms-transform: rotate(20deg);
+            transform: rotate(20deg);
 }
 
 .broccoli {
+    height: 320px;
     height: 20rem;
+    bottom: 16px;
     bottom: 1rem;
+    left: 160px;
     left: 10rem;
     z-index: 4020;
-    transform: rotate(-50deg);
+    -webkit-transform: rotate(-50deg);
+        -ms-transform: rotate(-50deg);
+            transform: rotate(-50deg);
 }
 
 .broccoliPile {
-    transform: rotate(-30deg);
+    -webkit-transform: rotate(-30deg);
+        -ms-transform: rotate(-30deg);
+            transform: rotate(-30deg);
 }
 
 .brussels {
+    height: 320px;
     height: 20rem;
+    bottom: -80px;
     bottom: -5rem;
+    right: 112px;
     right: 7rem;
     z-index: 4030;
-    transform: rotate(0deg); 
+    -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+            transform: rotate(0deg); 
 }
 
 
@@ -573,6 +750,7 @@ header {
 footer {
     background-color: #122A41;
     clear: both;
+    padding: 24px 60px;
     padding: 1.5rem 3.75rem;
     z-index: 5000;
     position: relative;
@@ -592,10 +770,12 @@ footer p {
 a,
 a:visited {
     color: #00DF60;
+    padding: 32px 0 16px 16px;
     padding: 2rem 0 1rem 1rem;
     text-decoration: none;
     display: inline-block;
-    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+            transition: all .3s ease-in-out;
 }
 
 a:hover {
@@ -707,6 +887,7 @@ a:hover {
 @media only screen and (max-width: 1285px) { 
     .kale2 {
         opacity: 0;
+        filter: alpha(opacity=0);
     }
 
 }
@@ -776,23 +957,30 @@ a:hover {
     }
 
     #pinkGrapefruit {
+        height: 336px;
         height: 21rem;
     }
 
     #lemonSlice {
+        height: 176px;
         height: 11rem;
-        transform: translateY(5.5rem);
+        -webkit-transform: translateY(5.5rem);
+            -ms-transform: translateY(5.5rem);
+                transform: translateY(5.5rem);
     }
 
     #orangeSlice {
         opacity: 0;
+        filter: alpha(opacity=0);
     }
 
     #plum {
         opacity: 0;
+        filter: alpha(opacity=0);
     }
 
     .broccoli {
+        right: 160px;
         right: 10rem;
         left: none;
     }
@@ -808,9 +996,10 @@ a:hover {
 
 @media only screen and (max-width: 620px) {
     .asparagus {
-        transform: rotate(35deg);
-        right: 1rem;
-    }
+        -webkit-transform: rotate(35deg);
+            -ms-transform: rotate(35deg);
+                transform: rotate(35deg);
+        right: 1rem;    }
 }
 
 @media only screen and (max-width: 575px) {
@@ -819,13 +1008,16 @@ a:hover {
     }
 
     .asparagus {
-        transform: rotate(-90deg);
+        -webkit-transform: rotate(-90deg);
+            -ms-transform: rotate(-90deg);
+                transform: rotate(-90deg);
         right: 3rem;
         bottom: -17rem;
     }
 
     .peas {
         opacity: 0;
+        filter: alpha(opacity=0);
     }
 
     .broccoli {
@@ -868,6 +1060,7 @@ a:hover {
 
     #nectarine {
         opacity: 0;
+        filter: alpha(opacity=0);
     }
 
     #figs {
@@ -902,6 +1095,7 @@ a:hover {
     section p {
         font-size: 1.3rem;
     }
+}
 
 
 /* ==========================================================================
