@@ -435,8 +435,8 @@ header {
 }
 
 .strawberryBounce {
--webkit-animation: strawberryBounce .4s ease-in; /* Safari 4+ */ /* Fx 5+ */ /* Opera 12+ */
-animation:         strawberryBounce .4s ease-in; /* IE 10+, Fx 29+ */
+    -webkit-animation: strawberryBounce .4s ease-in; /* Safari 4+ */ /* Fx 5+ */ /* Opera 12+ */
+    animation:         strawberryBounce .4s ease-in; /* IE 10+, Fx 29+ */
 }
 
 @-webkit-keyframes strawberryBounce {
@@ -934,6 +934,7 @@ a:hover {
     .basil {
         height: 20rem;
     }
+
     .kalePile {
         height: 35rem;
     }
@@ -1007,8 +1008,7 @@ a:hover {
         right: 160px;
         right: 10rem;
         left: none;
-    }
-
+    }   
     
 }
 
