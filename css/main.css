@@ -129,7 +129,7 @@ h2 {
 
 h1 {
     font-size: 5rem;
-    color: white;
+    color: #F3F1DE;
     padding: 9% 0 0 6% ;
     margin: 0;
 
@@ -155,10 +155,60 @@ header {
 }
 
 .fixedIntro {
-    background: green;
-    height: 150vh;
+    background: #54D24B;
+    height: 110vh;
     width: 100%;
     z-index: 100;
+}
+
+.intro-box {
+    background-color: #F3F1DE;
+    display: inline-block;
+    width: 63%;
+    padding: 1.75rem 2rem 1rem 2rem;
+    margin: 0 0 2rem 6%;
+    z-index: 100;
+    color: #54D24B;
+}
+
+.basil {
+    height: 27rem;
+    position: absolute;
+    top: -3rem;
+    right: -6rem;
+    z-index: 150;
+    transform: rotate(60deg);
+    transition: all .3s ease-in;
+}
+
+.asparagus {
+    height: 50rem;
+    position: absolute;
+    bottom: -10rem;
+    right: 4rem;
+    z-index: 160;
+    transform: rotate(25deg);
+    transition: all .3s ease-in;
+}
+
+.apple {
+    height: 20rem;
+    position: absolute;
+    bottom: -3rem;
+    right: -1rem;
+    z-index: 170;
+    transform: rotate(15deg);
+    transition: all .3s ease-in;
+}
+
+.peas {
+    height: 20rem;
+    position: absolute;
+    bottom: -8rem;
+    right: 16rem;
+    z-index: 180;
+    transform: rotate(0deg);
+    transition: all .3s ease-in;
 }
 
 
@@ -166,16 +216,6 @@ header {
 ================================================================= */
 section {
     height:100vh;
-}
-
-.intro-box {
-    background-color: #F3F1DE;
-    display: inline-block;
-    width: 65%;
-    padding: 1.75rem 2rem 1rem 2rem;
-    margin: 0 0 2rem 6%;
-    z-index: 100;
-
 }
 
 
@@ -205,6 +245,7 @@ section {
     background: #BC0069;
     position: relative;
     color: #BC0069;
+    z-index: 1001;
 }
 
 #kumquats {
