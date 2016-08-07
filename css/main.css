@@ -588,11 +588,17 @@ footer p {
     display: inline-block;
 }
 
-a {
+a,
+a:visited {
     color: #00DF60;
     padding: 2rem 0 1rem 1rem;
     text-decoration: none;
     display: inline-block;
+    transition: all .3s ease-in-out;
+}
+
+a:hover {
+    color: #008359;
 }
 
 .left {
