@@ -132,6 +132,7 @@ h1 {
     color: #F3F1DE;
     padding: 9% 0 0 6% ;
     margin: 0;
+    line-height: 3.5rem;
 
 }
 
@@ -145,85 +146,6 @@ section p {
     line-height: 1.5rem;
     margin-top: .5rem;
 }
-
-/* Header
-================================================================= */
-header {
-    position: relative;
-    margin-top: -50px;
-
-}
-
-.fixedIntro {
-    background: #54D24B;
-    height: 110vh;
-    width: 100%;
-    z-index: 100;
-}
-
-.intro-box {
-    background-color: #F3F1DE;
-    display: inline-block;
-    width: 63%;
-    padding: 1.75rem 2rem 1rem 2rem;
-    margin: 0 0 2rem 6%;
-    z-index: 100;
-    color: #54D24B;
-}
-
-.basil {
-    height: 27rem;
-    top: -3rem;
-    right: -6rem;
-    z-index: 150;
-    transform: rotate(60deg);
-}
-
-.basilSpin {
-    transform: rotate(0deg);
-}
-
-/*.basil {
-    height: 27rem;
-    position: absolute;
-    bottom: -10rem;
-    left: -9rem;
-    z-index: 150;
-    transform: rotate(-150deg);
-    transition: all .3s ease-in;
-}*/
-
-.asparagus {
-    height: 50rem;
-    bottom: -10rem;
-    right: 4rem;
-    z-index: 160;
-    transform: rotate(25deg);
-}
-
-.apple {
-    height: 20rem;
-    bottom: -3rem;
-    right: -1rem;
-    z-index: 170;
-    transform: rotate(0deg);
-}
-
-.appleSpin {
-    transform: rotate(15deg);
-}
-
-.peas {
-    height: 20rem;
-    bottom: -10rem;
-    right: 16rem;
-    z-index: 180;
-}
-
-.peasSpin {
-    transform: translateY(-2rem);
-}
-
 
 /* All Sections
 ================================================================= */
@@ -256,6 +178,85 @@ img {
     position: absolute;
     transition: all .3s ease-in;
 }
+
+/* Header
+================================================================= */
+header {
+    position: relative;
+    margin-top: -50px;
+
+}
+
+.fixedIntro {
+    background: #54D24B;
+    height: 110vh;
+    width: 100%;
+    z-index: 100;
+}
+
+.intro-box {
+    background-color: #F3F1DE;
+    display: inline-block;
+    width: 63%;
+    padding: 1.75rem 2rem 1rem 2rem;
+    margin: 0 0 2rem 6%;
+    z-index: 100;
+    color: #54D24B;
+}
+
+.basil {
+    height: 25rem;
+    top: -5rem;
+    right: -8rem;
+    z-index: 150;
+    transform: rotate(60deg);
+}
+
+.basilSpin {
+    transform: rotate(40deg);
+}
+
+/*.basil {
+    height: 27rem;
+    position: absolute;
+    bottom: -10rem;
+    left: -9rem;
+    z-index: 150;
+    transform: rotate(-150deg);
+    transition: all .3s ease-in;
+}*/
+
+.asparagus {
+    height: 50rem;
+    bottom: -10rem;
+    right: 3rem;
+    z-index: 160;
+    transform: rotate(25deg);
+}
+
+.apple {
+    height: 20rem;
+    bottom: -3rem;
+    right: -1rem;
+    z-index: 170;
+    transform: rotate(0deg);
+}
+
+.appleSpin {
+    transform: rotate(15deg);
+}
+
+.peas {
+    height: 20rem;
+    bottom: -10rem;
+    right: 16rem;
+    z-index: 180;
+}
+
+.peasSpin {
+    transform: translateY(-2rem);
+}
+
 
 /* Spring
 ================================================================= */
@@ -704,11 +705,39 @@ a:hover {
 }
 
 @media only screen and (max-width: 1285px) { 
-    #kale2 {
+    .kale2 {
         opacity: 0;
     }
 
 }
+
+@media only screen and (max-width: 1085px) {
+    .asparagus {
+        height: 43rem;
+    }
+
+    h1 {
+        font-size: 4rem;
+    }
+}
+
+@media only screen and (max-width: 990px) { 
+    h1 {
+        font-size: 3.8rem;
+    }
+
+    .basil {
+        height: 20rem;
+    }
+    .kalePile {
+        height: 35rem;
+    }
+
+    .broccoli {
+        height: 17rem;
+    }
+}
+
 
 @media only screen and (max-width: 900px) { 
     html {
@@ -722,17 +751,109 @@ a:hover {
         font-size: 15px;
     }
 
+    h1 {
+        padding-left: 10%;
+    }
+
+    .fixedIntro {
+        height: 115vh;
+    }
+
     .text-box {
         width: 80%;
         max-width: none;
         margin: 17% 10%;
     }
 
+    .basil {
+        opacity: 0;
+    }
+
+    .intro-box {
+        max-width: none;
+        width: 80%;
+        margin: 0 10%;
+    }
+
+    #pinkGrapefruit {
+        height: 21rem;
+    }
+
+    #lemonSlice {
+        height: 11rem;
+        transform: translateY(5.5rem);
+    }
+
+    #orangeSlice {
+        opacity: 0;
+    }
+
+    #plum {
+        opacity: 0;
+    }
+
+    .broccoli {
+        right: 10rem;
+        left: none;
+    }
+
+    
+}
+
+@media only screen and (max-width: 690px) {
+    .broccoli {
+        left: -2rem;
+    }
+}
+
+@media only screen and (max-width: 620px) {
+    .asparagus {
+        transform: rotate(35deg);
+        right: 1rem;
+    }
+
+@media only screen and (max-width: 575px) {
+    h1 {
+        font-size: 3.5rem;
+    }
+
+    .asparagus {
+        transform: rotate(-90deg);
+        right: 3rem;
+        bottom: -17rem;
+    }
+
+    .peas {
+        opacity: 0;
+    }
+
+    .broccoli {
+        left: -7rem;
+    }
+
+    .brussels {
+        right: 1rem;
+    }
+
+    a {
+        display: block;
+        padding: .75rem 0 ;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    h1 {
+        padding: 18% ;
+    }
 }
 
 @media only screen and (max-width: 400px) { 
     html {
         font-size: 12px;
+    }
+
+    .broccoli {
+        left: -10rem;
     }
 
 }
