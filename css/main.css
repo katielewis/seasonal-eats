@@ -154,11 +154,14 @@ section p {
 
 /* All Sections
 ================================================================= */
-section {
-    height:100vh;
+.keepContained {
+    width: 100%;
+    max-width: 1300px;
+    height: 100vh;
+    position: relative;
+    margin: 0 auto;
+
 }
-
-
 .text-box {
     background-color: #F3F1DE;
     display: inline-block;
@@ -195,16 +198,18 @@ img {
 /* Header
 ================================================================= */
 header {
-    position: relative;
     margin-top: -50px;
+    background: #54D24B;
 
 }
 
 .fixedIntro {
-    background: #54D24B;
+    position: relative;
     height: 110vh;
     width: 100%;
+    max-width: 1300px;
     z-index: 100;
+    margin: 0 auto;
 }
 
 .intro-box {
